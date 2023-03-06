@@ -22,6 +22,7 @@
       <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='home.css') }}">
       <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='methodology.css') }}">
       <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='carbon_app.css') }}">
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='user.css') }}">
 
       
 
@@ -41,8 +42,7 @@
 
 {% set a = {'Home':'home.Home','Carbon App':'carbon_app.Carbon_app',
  'Methodology':'methodology.Methodology', 'Login' : 'users.Login',
-'Register' : 'users.Register', 'New entry' : 'carbon_app.New_entry',
-'Your data' : 'carbon_app.Your_data'} %}
+'Register' : 'users.Register'} %}
 
 
 {% set b = {'Home':'fa-solid fa-house', 
@@ -69,7 +69,6 @@
                         {% endfor %}
 
                         {% for i in title %}
-                        {{i}}
                         {% endfor %}
                         
                     </li>

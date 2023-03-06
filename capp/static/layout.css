@@ -2,6 +2,7 @@
 /* Google fonts Roboto  */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 
+
 /* CSS utilities */
 *{
   box-sizing: border-box;
@@ -15,7 +16,7 @@ body {
 }
 .container {
   margin: auto;
-  max-width: 1320px;
+  max-width: 100%;
 }
 ul { 
   list-style: none;
@@ -79,22 +80,25 @@ img {
 /* Footer  */
 
 .section_footer {
+    position: relative;
+    min-height: 100vh;
     background: rgb(2,0,36);
     background: linear-gradient(0deg, rgba(2,0,36,1) 32%, rgba(177,177,177,1) 77%, rgba(255,255,255,1) 100%); 
 }
 
 .footer {
   display: flex;
-  position: relative;
+  position: absolute;
+  bottom: 0;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 700px;
   background: rgb(2,0,36);
   background: linear-gradient(0deg, rgba(2,0,36,1) 32%, rgba(177,177,177,1) 77%, rgba(255,255,255,1) 100%);
 }
 #footer_text {
     position: absolute;
+    text-align: center;
     bottom: 100px;
     color: white;
 }
@@ -117,6 +121,7 @@ img {
     color: #568c63;
     border-bottom: #2a4359 2px solid;
   }
+
 }
 @keyframes showup {
     0% {opacity:0;}
